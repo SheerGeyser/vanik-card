@@ -27,6 +27,7 @@ header {
 }
 
 .section-wrapper {
+    
     background-color: #fff0f3;
     .topCard {
         color: #707070;
@@ -52,4 +53,40 @@ header {
             }
         }
     }
+}
+
+.listCard{
+    padding: 1em 1em 2em;
+    h3{
+        margin-bottom: 2em;
+    }
+    .grid{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: .8em 2em;
+
+        @media (min-width: 426px) and (max-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1em 1em;
+        }
+
+        @media (min-width: 0px) and (max-width: 452px) {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+        
+    }
+    // &-wrapper {
+    //     display: flex;
+    //     justify-content: space-between;
+
+    //     @media (max-width: 767px) {
+    //         display: flex;
+    //         align-items: center;
+    //         flex-direction: column;
+    //     }
+    // }
 }
